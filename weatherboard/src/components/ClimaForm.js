@@ -16,7 +16,7 @@ class ClimaForm extends Component {
 	handleBlur = () => {
 		const clima = {city: this.state.city, temperature: this.state.temperature, status: this.state.status}
 		axios.put(
-			  `https://weatherboard-api.herokuapp.com/api/v1/climas${this.props.clima.id}`,
+			  `https://weatherboard-api.herokuapp.com/api/v1/climas/${this.props.clima.id}`,
 			  {clima: clima}
 			)
 		.then(response => {
