@@ -55,4 +55,14 @@ class WeathersContainer extends Component {
     }
   }
 
+
+
+
+
+
+
+
+
+
+
 export default WeathersContainer
