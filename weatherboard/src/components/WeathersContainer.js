@@ -21,7 +21,7 @@ class WeathersContainer extends Component {
     }
 
     addNewClima = () => {
-      axios.post('https://weatherboard-api.herokuapp.com/api/v1/climas', {clima: {city:'', temperature:'', status:''}})
+      axios.post('https://weatherboard-api.herokuapp.com/api/v1/climas', {clima: {city:'', temperature:0, status:''}})
       .then(response => {
         console.log(response)
         const climas = update(this.state.climas, { $splice: [[0, 0, response.data]]})
